@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+/* background-color: #ddb6e7; */
+background-color: #198754;
+}
+
+.main-text {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.logo {
+    max-height: 80px;
+    width: auto;
+    border: 5px solid #ffc107;
+    border-radius: 50%;
+}
+
+.img-euro {
+    height: 10px;
+    width: 10px;
+}
+
+.arrow {
+    font-size: 36px;
+    color: white;
+}
+
+/* .btn {
+color: rgb(95, 226, 43);
+} */
+
+.first-row {
+padding: 20px;
+}
+
+.btn {
+    margin: 20px;
+}

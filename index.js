@@ -1,8 +1,10 @@
 const inputOfmoney = document.querySelector('.amount-of-money');
 const btn = document.querySelector('.btn');
+const selector = document.querySelector('.form-select');
 const selectedEur = document.querySelector('.option-eur');
 const selectedUsd = document.querySelector('.option-usd');
 const selectedChf = document.querySelector('.option-chf');
+
 const outOfmoney = document.querySelector('.result-pln');
 // const urlEur = 'http://api.nbp.pl/api/exchangerates/rates/a/eur/';
 // const urlUsd = 'http://api.nbp.pl/api/exchangerates/rates/a/usd/';
@@ -12,14 +14,22 @@ const formSelectList = document.querySelectorAll('.form-select option-rates');
 const availablecurrencies = ['EUR', 'USD', 'CHF'];
 let threeCurrencies;
 
+
 btn.addEventListener('click', () => {
     fetch(url)
     .then((response) => response.json())
-    .then((data) => threeCurrencies = data[0].rates.filter(element => availablecurrencies.includes(element.code)))
+    .then((data) => {
+        threeCurrencies = data[0].rates.filter(element => availablecurrencies.includes(element.code))
+        const selectValue = selector.value;
+        const mid = threeCurrencies.find(element => element.code === selectValue).mid;
+        outOfmoney.value = inputOfmoney.value * mid;
+    })
+    
+
     // .then(() => console.log(threeCurrencies[0]))   
     // .then(() => outOfmoney.value = inputOfmoney.value *  )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )
     .catch((err) => console.log('err', err));
-    console.log(threeCurrencies);
+    // console.log(threeCurrencies);
 })
 
 

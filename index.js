@@ -6,9 +6,6 @@ const selector = document.querySelector('.form-select');
 const availablecurrencies = ['EUR', 'USD', 'CHF'];
 let threeCurrencies;
 
-const urltwo = 'http://api.nbp.pl/api/exchangerates/rates/a/chf/';
-const currencyConverterBtn = document.querySelector('.currency-converter-btn');
-
 btn.addEventListener('click', () => {
     fetch(url)
     .then((response) => response.json())
@@ -34,7 +31,10 @@ btn.addEventListener('click', () => {
 
     // })
 
-    
+    const urltwo = 'http://api.nbp.pl/api/exchangerates/rates/a/chf/';
+    const currencyConverterBtn = document.querySelector('.currency-converter-btn');
+
+
 
     console.log(urltwo)
 
@@ -48,6 +48,8 @@ btn.addEventListener('click', () => {
         })
         .catch((err) => console.error('err', err));
         })
+
+
 
 
         function get_emoji(emoji) {

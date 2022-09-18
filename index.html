@@ -11,54 +11,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <title>Przelicznik walut</title>
+
+<title>Przelicznik walut</title>
     </head>
     
-    <body>
+    <body class="body-color">
 
-<div class="container">
+<div class="container-sm shadow rounded">
     <div class="row first-row">
-        <div class="col-2">
-            <img class="logo" src="img/logo.jpg">
+        <div class="col-4">
+            <i class="bi bi-currency-exchange logo shadow"></i>
         </div>
-        <div class="col-5 main-text">Przelicznik walut</div>
+        <div class="col main-text">Przelicznik walut</div>
     </div>
-    <div class="row">
-        <span class="col-2">Posiadam PLN</span>
-        <span class="col-4">Wybrana waluta</span>
-        <span class="col-4">Po przeliczeniu</span>
+    <div class="row text-row">
+        <label for="first-input" class="col small-text">Posiadam PLN</label>
+        <label for="selector" class="col-5 small-text blabla">Wybrana waluta</label>
+        <label for="last-input" class="col-3 small-text blablabla">Po przeliczeniu</label>
     </div>
-    <div class="row">
-        <div class="col-2">
+    <div class="row input-row text-center shadow-sm">
+        <div class="col">
             <div class="input-group mb-3">
-                <input type="number" value="100" class="form-control amount-of-money" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="number" value="100" class="form-control shadow amount-of-money" id="first-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
         </div>
-        <div class="col-3">
-            <select class="form-select" aria-label="Default select example">
-                <option class="option-eur option-rates" value="EUR">EUR</option>
-                <option class="option-usd option-rates" value="USD">USD</option>
-                <option class="option-chf option-rates" value="CHF">CHF</option>
+        <div class="col">
+            <select class="form-select shadow" id="selector" aria-label="Default select example">
+                <option class="option-eur option-rates" value="EUR">&#8364;&emsp;EUR&emsp;&#128182;</option>
+                <option class="option-usd option-rates" alue="USD">&#36;&emsp;USD&emsp;&#128181;</option>
+                <option class="option-chf option-rates" value="CHF">&#8355;&emsp;CHF&emsp;&#128182;&#127469💆🏼‍♂️🇨🇭;1F1E8-1F1ED</option>
             </select>
         </div>
             <div class="col-1"><i class="bi bi-arrow-right arrow"></i></div>
-        <div class="col-1">
+        <div class="col">
             <div class="input-group mb-3">
-                <input class='result-pln' type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input class="form-control result-pln shadow" id="last-input" placeholder="Wynik" type="number" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
               </div>
         </div>
         <div class="row">
             <div class="col-3"></div>
-            <div class="col-5 d-grid gap-2">
-                <button type="button" class="btn btn-primary btn-warning">Przelicz</button>
+            <div class="col-6 d-grid gap-2">
+                <button type="button" class="btn btn-primary btn-warning shadow">Przelicz</button>
             </div>
         </div>
         <div class="row">
-            <span class="col-2">Kursy walut</span>
+            <span class="col"><button type="button" class="currency-converter-btn btn btn-primary btn-warning shadow">Kursy walut</button></span>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <span class="col-5">Ostatnia aktualizacja tu data</span>
-        </div>
+        </div> -->
     </div>
  
 

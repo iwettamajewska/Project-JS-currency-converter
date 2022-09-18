@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: blueviolet;
+}
+
+.wrapper{
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    background-color: aliceblue;
+}
+
+.wrapper header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+}
+
+form input:focus{
+    border: 2px solid blueviolet;
+    padding: 0 14px;
+}
+
+form .drop-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* tutaj jest jakby pod spodem selectora: */
+.drop-list .select-box{
+    display: flex;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 45px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+}
+
+.select-box select{
+width: auto;
+}
+
+.select-box img{
+    max-width: 25px;
+}

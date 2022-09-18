@@ -5,11 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
-/* background-color: #ddb6e7; */
-background-color: #198754;
+.container-sm{
+background-color: #30805a;
 }
 
+.body-color {
+    background-color: #198754;
+}
 
 .main-text {
     color: white;
@@ -17,11 +19,16 @@ background-color: #198754;
     font-weight: 800;
 }
 
+.small-text {
+    color: white;
+}
+
 .logo {
-    max-height: 80px;
-    width: auto;
-    border: 5px solid #ffc107;
-    border-radius: 50%;
+    font-size: 50px;
+    color: #ffc107;
+    padding: 0 20px;
+    border: 1px solid #ffc107;
+    border-radius: 20%;
 }
 
 .img-euro {
@@ -30,18 +37,23 @@ background-color: #198754;
 }
 
 .arrow {
-    font-size: 36px;
+    font-size: 26px;
     color: white;
 }
-
-/* .btn {
-color: rgb(95, 226, 43);
-} */
 
 .first-row {
 padding: 20px;
 }
 
-.btn {
-    margin: 20px;
+.text-row {
+    padding: 20px 0;
 }
+
+.btn {
+    margin: 40px 0;
+}
+
+
+/* form :where(text-row, input-group, form-select){
+    width: 100%;
+} */

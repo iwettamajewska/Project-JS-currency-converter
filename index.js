@@ -13,7 +13,10 @@ btn.addEventListener('click', () => {
         threeCurrencies = data[0].rates.filter(element => availablecurrencies.includes(element.code))
         const selectValue = selector.value;
         const mid = threeCurrencies.find(element => element.code === selectValue).mid;
-        outOfmoney.value = inputOfmoney.value * mid;
+        outOfmoney.innerText = Number.parseFloat(inputOfmoney.value * mid).toFixed(2)
+        // Druga mozliwosc (zostaw sobie, ale bez wysyłania do sprawdzenia):
+        // let result = inputOfmoney.value * mid;
+        // result = Number.parseFloat(result).toFixed(2);
     })
     .catch((err) => console.log('err', err))
     })

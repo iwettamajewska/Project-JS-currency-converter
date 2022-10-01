@@ -15,59 +15,52 @@
 <title>Przelicznik walut</title>
     </head>
     
-    <body class="body-color">
+    <body class="green-background">
 
 <div class="container-sm shadow rounded">
-    <div class="row first-row">
+    <div class="row logo-main-text-row">
         <div class="col-4">
             <i class="bi bi-currency-exchange logo shadow"></i>
         </div>
-        <div class="col main-text">Przelicznik walut</div>
+        <div class="col text main-text">Przelicznik walut</div>
     </div>
     <div class="row text-row">
-        <label for="first-input" class="col small-text">Posiadam PLN</label>
-        <label for="selector" class="col small-text">Wybrana waluta</label>
+        <label for="pln-input" class="col text">Posiadam PLN</label>
+        <label for="selector" class="col text">Wybrana waluta</label>
         <div class="col-1"></div>
-        <label for="last-input" class="col small-text">Po przeliczeniu</label>
+        <label for="result-input" class="col text">Po przeliczeniu</label>
     </div>
     <div class="row row-input input-row text-center shadow-sm">
         <div class="col">
             <div class="input-group mb-3">
-                <input type="number" min="1" value="100" class="form-control shadow amount-of-money" id="first-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="number" min="1" value="100" class="form-control shadow amount-of-money" id="pln-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
         </div>
         <div class="col">
             <select class="form-select shadow" id="selector" aria-label="Default select example">
-                <option class="option-eur option-rates" value="EUR">&#8364;&emsp;EUR&emsp;&#128182;</option>
-                <option class="option-usd option-rates" value="USD">&#36;&emsp;USD&emsp;&#128181;</option>
-                <option class="option-chf option-rates" value="CHF">&#8355;&emsp;CHF&emsp;&#128182;&#127469💆🏼‍♂️🇨🇭;1F1E8-1F1ED</option>
+                <option class="option-rates" value="EUR">&#8364; &emsp; EUR</option>
+                <option class="option-rates" value="USD">&#36; &emsp; USD</option>
+                <option class="option-rates" value="CHF">&#8355; &emsp; CHF</option>
             </select>
         </div>
             <div class="col-1"><i class="bi bi-arrow-right arrow"></i></div>
         <div class="col">
             <div class="input-group mb-3">
-                <input class="form-control result-pln shadow" id="last-input" placeholder="wynik"></input>
+                <input class="form-control shadow result-input" placeholder="wynik" readonly></input>
               </div>
         </div>
         <div class="row">
             <div class="col-5"></div>
-            <div class="col-2 d-grid gap-2">
+            <div class="col-2">
                 <button type="button" class="btn btn-primary btn-warning shadow">Przelicz</button>
             </div>
         </div>
-        <div class="row">
-            <span class="col"><button type="button" class="currency-converter-btn btn btn-primary btn-warning shadow">Pokaż czas ostatniej aktualizacji kursu</button></span>
-        </div>
         <div class="row row-effective-date">
-            <span class="col-3 effective-date-text">Ostatnia aktualizacja:</span>
-            <span class="col-2 effective-date"></span>
+            <span class="col-3 effective-date-text text">Ostatnia aktualizacja:</span>
+            <span class="col effective-date text"></span>
         </div>
     </div>
- 
-
-
 </div>
-
 
     <script src="index.js"></script> 
     </body>

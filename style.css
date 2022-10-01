@@ -1,61 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    /* font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", Times, Symbola, Aegyptus, Code2000, Code2001, Code2002, Musica, serif, LastResort; */
-    /* font-weight: 200; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.container-sm{
-background-color: #30805a;
+.green-background {
+  background-color: #198754;
 }
 
-.body-color {
-    background-color: #198754;
-}
-
-.main-text {
-    color: white;
-    font-size: 40px;
-    font-weight: 800;
-}
-
-.small-text {
-    color: white;
+.container-sm {
+  background-color: #30805a;
 }
 
 .logo {
-    font-size: 50px;
-    color: #ffc107;
-    padding: 0 20px;
-    border: 1px solid #ffc107;
-    border-radius: 20%;
+  font-size: 50px;
+  color: #ffc107;
+  padding: 0 20px;
+  border: 1px solid #ffc107;
+  border-radius: 20%;
 }
 
-.img-euro {
-    height: 10px;
-    width: 10px;
+.text {
+  color: white;
+  text-align: left;
 }
 
-.arrow {
-    font-size: 26px;
-    color: white;
+.main-text {
+  font-size: 40px;
+  font-weight: 800;
 }
 
-.first-row {
-padding: 20px;
+.logo-main-text-row {
+  padding: 20px;
 }
 
 .text-row {
-    padding: 20px 0;
+  padding: 20px 0;
+}
+
+.arrow {
+  font-size: 26px;
+  color: white;
 }
 
 .btn {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 
-.result-pln {
-    color: grey;
-    text-align: left;
+.effective-date-text {
+  text-align: left;
 }
